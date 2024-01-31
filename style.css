@@ -1,18 +1,67 @@
 .main-container{
-    display: flex;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 1200px;
+  max-width: 80%;
   margin: 0 auto;
   padding: 20px;
 }
-.common{
+.heading {
+  text-align: center;
+  font-size: 45px;
+  color: red;
+}
+.title{
+  text-align: center;
+  color: crimson;
+}
+.common {
+  display: flex;
+  margin-bottom: 60px;
+  width: 20%;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  box-shadow: black 0 4px 8px;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.common img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  
+}
+.l1{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 
+}
 
-    margin-bottom: 60px;
-    width: 30%;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    
-    
+#burger,#fries,#drink,#cake{
+  width: 20px;
+  height: 20px;
+
+}
+.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+#order{
+  height: 40px;
+  width: 120px;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: black 0 2px 3px;
+
+}
+#order:hover{
+  background-color: rgb(2, 115, 117);
+  color: white;
 }
