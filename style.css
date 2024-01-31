@@ -43,6 +43,7 @@
 #burger,#fries,#drink,#cake{
   width: 20px;
   height: 20px;
+  cursor: pointer;
 
 }
 .btn{
@@ -64,4 +65,14 @@
 #order:hover{
   background-color: rgb(2, 115, 117);
   color: white;
+}
+@media screen and (max-width: 768px) {
+  .common {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .common {
+    width: 100%;
+  }
 }
