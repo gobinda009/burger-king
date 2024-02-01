@@ -1,4 +1,4 @@
-const burger = document.getElementById("burger");
+// const burger = document.getElementById("burger");
 
 
 const btn = document.getElementById("order");
@@ -12,26 +12,35 @@ function getRandomOrderId(){
 btn.addEventListener("click",()=>{
     const selecteditems = [];
     const checkBoxes = document.getElementsByName('foodItem');
-
+    const ifchecked = document.getElementById("check");
+    // selecteditems="";
+    console.log(selecteditems);
     checkBoxes.forEach(function(checkbox){
         if(checkbox.checked){
             selecteditems.push(checkbox.value);
+            checkbox.checked=false;
         }
     });
+
 
     if(selecteditems.length === 0){
         alert("Please select atleast one item");
         return;
     }
     const orderId = getRandomOrderId();
+    list.innerHTML="";
 
     const result = document.createElement("div");
+    
     result.classList.add("result-div");
-
+   
     result.innerHTML=`
     <span class="orderId"> Order Id:</span>
     <span class="orderId">${orderId}</span>
     <p class="list-sel">${selecteditems}</p>
     `
     list.appendChild(result);
+    // result="";
+
+    
 })
