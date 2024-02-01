@@ -62,6 +62,33 @@
   box-shadow: black 0 2px 3px;
 
 }
+
+#order-details{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  padding: 20px;
+}
+.result-div{
+  background-color: rgb(15, 15, 30);
+  height: 200px;
+  width: 300px;
+  text-align: center;
+  padding-top: 20px;
+}
+.orderId {
+  color: red;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font: weight 400px;
+}
+.list-sel{
+  ont-family:Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 30px;
+  font: weight 400px; 
+}
 #order:hover{
   background-color: rgb(2, 115, 117);
   color: white;
